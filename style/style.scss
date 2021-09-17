@@ -1,0 +1,101 @@
+/* GENERAL STYLES AND SETUP */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,500&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$light-color: #fefefe;
+$dark-color: #020203;
+$outside-padding: 25px;
+$bold-text: 'Roboto', sans-serif;
+$regular-text: 'Lora', serif;
+
+body{
+    background-color: $light-color;
+    padding: 25px;
+
+}
+
+/* HEADER */
+
+header{
+
+    #burger-menu-toggle{
+        position: absolute;
+        width: 50px;
+        right: 25px;
+    }
+
+    nav{
+        background-color: #030303;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 100vw;
+
+        ul{
+            list-style: none;
+
+            li{
+                list-style-image: none;
+
+                a{
+                    text-decoration: none;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and  (min-width: 1200px) {
+
+    body{
+        padding: 50px;
+    }
+
+    header{
+
+        #burger-menu-toggle{
+            display: none;
+        }
+
+        nav{
+            position: relative;
+            left: 0;
+            right: 0;
+            height: 30%;
+            width: 100%;
+
+            ul{
+                position: absolute;
+                display: flex;
+                right: 0;
+
+                li{
+                    margin-right: 50px;
+                    &:last-of-type{
+                    margin-right: 0; 
+                    }
+
+                    a{
+                        font-family: $bold-text;
+                        font-weight: 700;
+                        font-size: 2.5rem;
+                        text-transform: uppercase;
+                        color: $dark-color;
+    
+                    }
+                }      
+            }
+        }
+    }
+
+
+
+
+}
