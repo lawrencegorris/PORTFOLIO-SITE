@@ -32,6 +32,8 @@ If you have any thoughts, opinions or tips on how I could improve my portfolio o
 
 Thanks for checking ou my repo and maybe talk to you soon.
 
-Staty safe, stay healthy, and most importantly, stay creative.
+Stay safe, stay healthy, and most importantly, stay creative.
+
 Kind regards
+
 Lawrence
